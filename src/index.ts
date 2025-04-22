@@ -8,7 +8,7 @@ import { handleTranslateText } from './openAI';
 export async function bootstrap() {
   const cli = cac(pkg.name);
 
-  cli.command('', '打开翻译输入框').action(async () => {
+  cli.command('', '打开翻译文本输入框').action(async () => {
     const result = await input({
       default: '',
       message: '请输入需要翻译的内容：',
